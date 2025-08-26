@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo-section img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        .details-box {
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+        .detail-row {
+            display: flex;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        .detail-label {
+            font-weight: bold;
+            width: 120px;
+        }
+        .detail-value {
+            flex: 1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        thead th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+            color: #555;
+            border-right: 1px solid #ddd;
+        }
+        thead th:last-child {
+            border-right: none;
+        }
+        .course-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .course-info {
+            flex: 1;
+            padding-right: 10px;
+        }
+        .course-grade {
+            white-space: nowrap;
+        }
+        .table-row-container {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+        }
+        .level-cell {
+            width: 100px;
+            padding: 12px 15px;
+            background-color: #f8f8f8;
+            font-weight: bold;
+            border-right: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        .course-cell {
+            flex-grow: 1;
+        }
+        .course-cell table {
+            margin-top: 0;
+            border: none;
+        }
+        .course-cell td {
+            border: none;
+            padding: 12px 15px;
+        }
+        .course-cell tr:last-child td {
+            border-bottom: none;
+        }
+        .grade-status-cell {
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+        }
+        .status-button {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .course-cell .marks {
+            width: 60px;
+            text-align: center;
+        }
+        .course-cell .grades {
+            width: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-section">
+                <img src="https://icmap.com.pk/icmap_new/images/logo.png" alt="ICMA Pakistan Logo">
+                <div class="logo-text">ICMA Pakistan</div>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a> |
+                <a href="#">Contact Us</a> |
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Result</h1>
+            <div class="details-box">
+                <div class="detail-row">
+                    <div class="detail-label">Reg No</div>
+                    <div class="detail-value">20243089</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Roll No</div>
+                    <div class="detail-value">2378</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Name</div>
+                    <div class="detail-value">MEHRAB SAJJAD</div>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width:15%;">Level/<br>Semester</th>
+                        <th>Course(s)/<br>Module(s)</th>
+                        <th style="width:10%;">Marks</th>
+                        <th style="width:15%;">Grades</th>
+                        <th style="width:15%;">Level<br>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" style="vertical-align: top;">OL-1</td>
+                        <td>Business Economics</td>
+                        <td></td>
+                        <td>Pass</td>
+                        <td rowspan="2" style="vertical-align: middle;">
+                            In <br>
+                            <a href="#" class="status-button">Process</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Business Communication<br>& Report Writing</td>
+                        <td>87</td>
+                        <td>Pass</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
